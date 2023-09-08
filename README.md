@@ -1,5 +1,7 @@
 # Project Time Tracker
 
+
+
 ## Getting Started
 
 ### Tech Stack
@@ -11,6 +13,13 @@
 - DB: [MongoDB](https://www.mongodb.com/)
 - Deploy: [Vercel](https://vercel.com/)
 - State management: [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+
+### Prerequisites
+
+- Atlas MongoDB account and c setted up
+- Google Developer account and OAuth 2.0 Client ID setted up
+- Node.js 18.16.1 or newer
+
 
 
 ### Running the project
