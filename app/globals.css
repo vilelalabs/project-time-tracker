@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-zinc-900 h-full overflow-x-hidden;
+}
+
+#__next{
+  @apply h-full;
+}
+
+html{
+  @apply h-full;
+}
+
+/* Change the size and color of the calendar icon in input[type="date"] */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  font-size: 24px;
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(15deg);
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  font-size: 24px;
+  filter: invert(0.5) sepia(1) saturate(3) hue-rotate(15deg);
+}
