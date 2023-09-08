@@ -11,7 +11,6 @@ export default async function Home() {
 
   if (!session) {
     redirect('/login');
-
   }
 
   return (
@@ -24,9 +23,9 @@ export default async function Home() {
             <h2 className="text-xl font-bold">Project Time Tracker</h2>
             <div className="text-sm space-y-4">
               <p>Track how much time you take to complete your projects.</p>
-              <p>Click the "Continue" button below to start a new project or select an existing one.</p>
               <p>Found a bug? Report it on GitHub. Click <a href="https://github.com/vilelalabs/project-time-tracker" target="_blank" className="text-highlight">here</a>!</p>
               <p>Thank you for using our system.</p>
+              <p className='text-lg text-center text-highlight'>Click the "Continue" button below to start a new project or select an existing one.</p>
               <hr className="border-bgmenu border-1" />
             </div>
           </div>
