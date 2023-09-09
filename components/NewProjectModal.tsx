@@ -63,7 +63,7 @@ const NewProjectModal = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [projectName, projectDescription, projects])
+    }, [projectName, projectDescription, projects,setCurrentProject])
 
     const getProjects = useCallback(async () => {
         try {
@@ -73,7 +73,7 @@ const NewProjectModal = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [projects, selectedProject])
+    }, [projects, selectedProject,setProjects])
 
     const updateProject = useCallback(async () => {
         try {

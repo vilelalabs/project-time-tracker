@@ -25,7 +25,7 @@ export default async function Home() {
               <p>Track how much time you take to complete your projects.</p>
               <p>Found a bug? Report it on GitHub. Click <a href="https://github.com/vilelalabs/project-time-tracker" target="_blank" className="text-highlight">here</a>!</p>
               <p>Thank you for using our system.</p>
-              <p className='text-lg text-center text-highlight'>Click the "Continue" button below to start a new project or select an existing one.</p>
+              <p className="text-lg text-center text-highlight">Click the CONTINUE button below to start a new project or select an existing one.</p>
               <hr className="border-bgmenu border-1" />
             </div>
           </div>

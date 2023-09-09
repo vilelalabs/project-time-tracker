@@ -33,7 +33,7 @@ const History = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [history]);
+    }, [history,project]);
 
     useEffect(() => {
         getHistory();
