@@ -48,7 +48,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div className="flex flex-col min-h-screen w-2/5 text-primary bg-bgmenu font-bold px-8 justify-between">
+        <div className="flex flex-col min-h-screen w-auto text-primary bg-bgmenu font-bold px-8 justify-between">
             <div className='space-y-12 flex flex-col py-8 '>
                 <h1 className="text-highlight font-semibold text-center">
                     Project Time Tracker
