@@ -73,7 +73,7 @@ const NewProjectModal = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [projects, selectedProject,setProjects])
+    }, [projects, selectedProject,setProjects,setCurrentProject])
 
     const updateProject = useCallback(async () => {
         try {
