@@ -33,12 +33,11 @@ const History = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [history,project]);
+    }, [project, setHistory]);
 
     useEffect(() => {
         getHistory();
-    }, [history]);
-
+    }, [history, getHistory]);
 
     const indexOfLastRow = (currentPage * rowsPerPage)
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;

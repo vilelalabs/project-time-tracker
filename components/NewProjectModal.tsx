@@ -89,13 +89,13 @@ const NewProjectModal = () => {
         } catch (error) {
             console.error(error);
         }
-    }, [selectedProject, projectName, projectDescription])
+    }, [selectedProject, projectName, projectDescription,setCurrentProject, setProjects])
 
 
 
     useEffect(() => {
         getProjects();
-    }, [projects])
+    }, [projects,getProjects])
 
     if (!isOpen) {
         return null;
