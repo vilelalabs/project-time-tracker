@@ -56,8 +56,8 @@ const History = () => {
                 <h2 className="text-2xl font-bold text-primary mb-8">History</h2>
                 {(history.length !== 0) ? (
                     <>
-                        <div className=" flex flex-col items-center w-full bg-bgsecondary p-12 text-lg font-semibold text-primary">
-                            <div className="flex flex-row justify-between items-center w-full mb-8">
+                        <div className="flex flex-col items-center w-full bg-bgsecondary p-4 md:p-12 text-lg font-semibold text-primary overflow-x-auto">
+                            <div className="flex flex-row justify-between items-center w-full min-w-[640px] mb-8">
                                 <div className="flex flex-row justify-between items-center w-full">
                                     <p className="w-1/5 text-left">Date</p>
                                     <p className="w-1/5 text-left">End</p>
@@ -67,7 +67,7 @@ const History = () => {
                             </div>
                             {currentRows.map((item: any) => (
                                 <div key={item.id} className="flex flex-col  w-full space-y-4 mb-6">
-                                    <div className="flex flex-row justify-between border-b">
+                                    <div className="flex flex-row justify-between border-b min-w-[640px]">
                                         <p className="w-1/5 text-left">{String(item.date).split('T')[0]}</p>
                                         <p className="w-1/5 text-left">{item.endTime}</p>
                                         <p className="w-1/5 text-left">{`${Math.floor(item.workingTime / 60).toString().padStart(2, '0')}:${(item.workingTime % 60).toString().padStart(2, '0')}`}</p>

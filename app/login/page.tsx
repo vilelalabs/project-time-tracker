@@ -8,7 +8,7 @@ const AuthPage = () => {
                     Project Time Tracker</h1>
             </div>
             <div className=" flex flex-col min-h-screen justify-center items-center">
-                <div className=" flex flex-col items-center w-2/3 bg-bgsecondary p-12 space-y-8">
+                <div className=" flex flex-col items-center w-full md:w-2/3 bg-bgsecondary p-6 md:p-12 space-y-8">
                     <img src="/banner.png" alt="banner" className="w-full rounded-md" />
                     <div className="text-primary text-center w-full space-y-2">
                         <h2 className="text-2xl font-bold">Signin / Sign up</h2>

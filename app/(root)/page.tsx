@@ -17,7 +17,7 @@ export default async function Home() {
     <>
       <NewProjectModal />
       <div className="m-4 flex flex-col justify-center items-center w-full">
-        <div className=" flex flex-col items-center w-2/3 bg-bgsecondary p-12 space-y-12">
+        <div className=" flex flex-col items-center w-full md:w-2/3 bg-bgsecondary p-6 md:p-12 space-y-12">
           <img src="/banner.png" alt="banner" className="w-full rounded-md" />
           <div className="text-primary text-left w-full space-y-2">
             <h2 className="text-xl font-bold">Project Time Tracker</h2>

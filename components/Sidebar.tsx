@@ -48,8 +48,8 @@ const Sidebar = () => {
     }
 
     return (
-        <div className="flex flex-col min-h-screen w-auto text-primary bg-bgmenu font-bold px-8 justify-between">
-            <div className='space-y-12 flex flex-col py-8 '>
+        <div className="flex flex-col md:min-h-screen w-full md:w-auto text-primary bg-bgmenu font-bold px-4 md:px-8 py-4 md:py-0 gap-4 justify-between">
+            <div className='space-y-4 md:space-y-12 flex flex-col py-2 md:py-8 '>
                 <h1 className="text-highlight font-semibold text-center">
                     Project Time Tracker
                 </h1>
@@ -59,7 +59,7 @@ const Sidebar = () => {
                         {project?project?.name:"No Project Selected"}
                     </h2>
                 </div>
-                {project && <div className="space-y-4">
+                {project && <div className="flex flex-row flex-wrap gap-4 md:flex-col md:gap-0 md:space-y-4">
                     {routes.map((route) => (
                         <div
                             onClick={() => { onNavigate(route.href) }}
@@ -71,7 +71,7 @@ const Sidebar = () => {
                     ))}
                 </div>}
             </div>
-            <div className="flex flex-col mb-8 gap-4">
+            <div className="flex flex-row md:flex-col justify-between items-center md:items-start mb-2 md:mb-8 gap-4">
                 <h2 className="flex items-center text-primary">
                     <AiOutlineUser className="text-highlight mr-2" size={25} />
                     {session?.user?.name}

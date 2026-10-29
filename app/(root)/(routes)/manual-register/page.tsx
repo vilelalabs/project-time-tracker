@@ -60,7 +60,7 @@ const ManualRegisterPage = () => {
     return (
         <div className="m-4 flex flex-col justify-center items-center w-full text-secondary ">
             <h2 className="text-2xl font-bold text-primary mb-8">Manual register</h2>
-            <div className=" flex flex-col items-center w-2/3 bg-bgsecondary p-12 space-y-12">
+            <div className=" flex flex-col items-center w-full md:w-2/3 bg-bgsecondary p-6 md:p-12 space-y-12">
                 <form
                     onSubmit={(e) => onSubmit(e)}
                     className="flex flex-row flex-wrap mx-4 p-4 gap-8 w-full">

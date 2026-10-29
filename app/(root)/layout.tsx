@@ -17,9 +17,9 @@ export default function Layout({
   return (
     <div lang="en">
       <div className={inter.className}>
-        <div className="flex flex-row min-h-screen">          
+        <div className="flex flex-col md:flex-row min-h-screen">
             <Sidebar />
-          <div className="flex flex-col items-center justify-center w-full">
+          <div className="flex flex-col items-center justify-center w-full min-w-0">
             {children}
           </div>
         </div>

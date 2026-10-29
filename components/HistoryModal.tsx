@@ -29,7 +29,7 @@ const HistoryModal = ({ register }: HistoryModalProps) => {
     return (
         <div className="z-50 transition duration-300 bg-black bg-opacity-80 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0">
             <div className="relative w-full mx-auto max-w-2xl rounded-md overflow-hidden">
-                <div className='scale-50 md:scale-75 lg:scale-100 transform duration-300 relative flex-auto bg-black drop-shadow-md p-16 w-full'>
+                <div className='md:scale-75 lg:scale-100 transform duration-300 relative flex-auto bg-black drop-shadow-md p-6 md:p-16 w-full'>
                     <AiOutlineClose
                         size={30}
                         className="absolute top-4 right-4 text-2xl text-primary cursor-pointer hover:scale-110 hover:text-highlight transition"
