@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SignInButton from "@/components/SignInButton";
 
 const AuthPage = () => {
@@ -15,6 +16,11 @@ const AuthPage = () => {
                         <p className="text-sm">Use your Google Account to Sign in or Sign up.</p>
                     </div>
                     <SignInButton />
+                    <p className="text-xs text-center text-zinc-400 leading-relaxed max-w-sm">
+                        By signing in, you confirm that you have read our{" "}
+                        <Link href="/privacy" className="text-highlight underline hover:text-highlighthover">Privacy Policy</Link>.
+                        We only use essential cookies to keep you signed in.
+                    </p>
 
                 </div>
             </div>

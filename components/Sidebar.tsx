@@ -1,9 +1,11 @@
 "use client";
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 import { AiOutlineProject, AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { BsPencil, BsCardList } from 'react-icons/bs'
 import { BiAlarmAdd, BiLogOutCircle } from 'react-icons/bi'
+import { MdOutlinePrivacyTip } from 'react-icons/md'
 
 import { useSession, signOut } from 'next-auth/react';
 import useCurrentProject from '@/hooks/useCurrentProject';
@@ -86,6 +88,10 @@ const Sidebar = () => {
                     <BiLogOutCircle className="text-highlight mr-2" size={25} />
                     Logout
                 </button>
+                <Link href="/privacy" className="flex items-center text-primary font-normal text-sm hover:text-highlight transition">
+                    <MdOutlinePrivacyTip className="text-highlight mr-2" size={20} />
+                    Privacy
+                </Link>
             </div>
         </div>
 
