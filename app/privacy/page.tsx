@@ -56,7 +56,7 @@ const POLICIES: Policy[] = [
             },
             {
                 title: "Por quanto tempo guardamos",
-                paragraphs: ["Enquanto a sua conta existir. Se você pedir a exclusão, apagamos a conta, os projetos e os registros de tempo em até 15 dias, exceto o que a lei obrigar a manter."],
+                paragraphs: ["Enquanto a sua conta existir. Se você pedir a exclusão, apagamos a conta, os projetos e os registros de tempo em até 30 dias, exceto o que a lei obrigar a manter."],
             },
             {
                 title: "Seus direitos",
@@ -115,7 +115,7 @@ const POLICIES: Policy[] = [
             },
             {
                 title: "How long we keep it",
-                paragraphs: ["For as long as your account exists. If you ask for deletion, we delete the account, projects and time records within 15 days, except what the law requires us to keep."],
+                paragraphs: ["For as long as your account exists. If you ask for deletion, we delete the account, projects and time records within 30 days, except what the law requires us to keep."],
             },
             {
                 title: "Your rights",
